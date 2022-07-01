@@ -1,0 +1,783 @@
+*{ 
+	font-family: 'DM Sans', sans-serif;
+    font-size: 62.5%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*=====================INDEX======================*/
+
+.grid-container-index{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/heroimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 26%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+    "header"
+    "none"
+    "none"
+    "none"
+    "none"
+    "none"
+    "modelos"
+    "lema";
+}
+
+
+
+
+.header-index{
+    grid-area: header;
+    background: rgba(97, 200, 185, 1);
+    height: auto;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+    ul{
+        text-decoration: none;
+        list-style: none;
+       
+    }
+
+    li a{
+        text-decoration: none;
+        font-size: 2rem;
+        color: azure;
+    }
+
+    a:hover{
+        color: #122522;
+    }
+
+.lema-text{
+    margin-top: 10%;
+    margin-left: 2%;
+    grid-area: lema;
+}
+
+h1{
+    font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: #61C8B9;
+}
+
+footer h5{
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.modelos{
+    grid-area: modelos;
+	display: flex;
+	align-items: center;
+	width: 100vw;
+	margin-left: 2%;
+}
+
+.img1{
+    background-color: whitesmoke;
+    border: 2px solid #61C8B9;
+    border-radius: 8px;
+    width: 59px;
+    height: 83px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+.img2{
+    background-color: whitesmoke;
+    border: 2px solid #61C8B9;
+    border-radius: 8px;
+    width: 73px;
+    height: 99px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+.img3{
+    background-color: whitesmoke;
+    border: 2px solid #61C8B9;
+    border-radius: 8px;
+    width: 84px;
+    height: 115px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+.img4{
+    background-color: whitesmoke;
+    border: 2px solid #61C8B9;
+    border-radius: 8px;
+    width: 78px;
+    height: 83px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+/*==================media queries INDEX=============*/ 
+
+@media (min-width: 768px){
+   .grid-container-index{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "header header"
+        ". lema"
+        "none none"
+        "modelos modelos" ;
+    }
+
+    .header-index{
+        height: auto;
+        width: 95%;
+        margin: auto;
+        padding: 2%;
+        margin-top: 0;
+        flex-flow: row;
+    }
+
+    ul{
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        margin-left: 2%;
+    }
+
+    .logo{
+        margin-left: 10%;
+    }
+
+    h1{
+        font-size: 3rem;
+        margin-left: 25%;
+    }
+
+ 
+    .modelos{
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .img1{
+        width: 82px;
+        height: 115px;
+    }
+
+    .img2{
+        width: 102px;
+        height: 138px;
+    }
+
+    .img3{
+        width: 115px;
+        height: 159px;
+    }
+
+    .img4{
+        width: 108px;
+        height: 114px;
+    }
+
+
+}
+
+@media (max-width: 428px){
+    .lema-text br{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px){
+    .grid-container-index{
+        grid-template-areas: "header header" ". lema" "modelos modelos" "none none";
+    }
+
+    .modelos{
+        margin-left: 25%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .lema-text h1{
+        font-size: 4rem;
+        margin-right: 10%;
+        margin-bottom: 10%;
+        margin-left: 18%;
+    }
+
+    .img1{
+        width: 94px;
+        height: 133px;
+    }
+
+    .img2{
+        width: 117px;
+        height: 158px;
+    }
+
+    .img3{
+        width: 133px;
+        height: 183px;
+    }
+
+    .img4{
+        width: 124px;
+        height: 132px;
+    }
+
+    .header-index{
+        height: auto;
+        width: 80%;
+        padding: 2%;
+        margin: auto;
+        margin-top: 0;
+    }
+
+}
+
+
+
+
+
+/*=========================QUIENES SOMOS===============*/
+
+.grid-container-qs{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/heroimg-lessop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 26%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    "header"
+    "titulo"
+    "imagen"
+    "texto"
+    "none";
+}
+
+.titulo-qs{
+    grid-area: titulo;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-qs h2{
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    color: #61C8B9;
+}
+
+.img-qs{
+    grid-area: imagen;
+    display: flex;
+    justify-content: center;
+}
+
+.img-qs img{
+    width: 70%;
+    margin: auto;
+}
+
+.texto-qs{
+    grid-area: texto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.texto-qs p{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    padding: 5% 5% 5% 5%;
+    color: #122522;
+    	
+}
+
+/*============media queries QUIENES SOMOS=====*/
+
+@media (min-width: 768px){
+
+    .grid-container-qs{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "header header"
+        "titulo titulo"
+        "imagen imagen"
+        "texto texto";
+    }
+
+    .img-qs img{
+    width: 387px;
+    height: 281px;
+    }
+
+    .titulo-qs{
+       margin: auto;
+    }
+
+    .titulo-qs h2{
+        font-size: 4rem;
+    }
+
+
+}
+
+@media (min-width: 1024px){
+    
+    .grid-container-qs{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 15%;
+        grid-template-areas:
+        "header header"
+        "titulo titulo"
+        "imagen texto"
+        "none none";
+    }
+
+    .img-qs img{
+        margin-top: 0;
+        margin-right: 5%;
+    }
+
+    .texto-qs p{
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 10%;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 15%;
+    }
+
+
+
+}
+
+
+/*=============CLIENTES===========*/
+
+.grid-container-clientes{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/heroimg-lessop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 26%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    "header"
+    "titulocl"
+    "imagencl"
+    "textocl"
+    "none";
+}
+
+.titulo-cl{
+    grid-area: titulocl;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-cl h2{
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    color: #61C8B9;
+}
+
+.img-cl{
+    grid-area: imagencl;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.img-cl img{
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #61C8B9;
+    
+}
+
+.texto-cl{
+    grid-area: textocl;
+    display: flex;
+    justify-content: center;
+
+}
+
+.texto-cl p{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    padding: 5% 5% 5% 5%;
+    color: #122522;
+    	
+}
+
+/*=============media queries CLIENTES=========*/
+@media (min-width: 768px){
+
+    .grid-container-cl{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "header header"
+        "titulocl titulocl"
+        "imagencl imagencl"
+        "textocl textocl";
+    }
+
+    .img-cl img{
+    width: 387px;
+    height: 281px;
+    }
+
+    .titulo-cl{
+       margin: auto;
+    }
+
+    .titulo-cl h2{
+        font-size: 4rem;
+    }
+
+
+}
+
+@media (min-width: 1024px){
+    
+    .grid-container-clientes{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 15%;
+        grid-template-areas:
+        "header header"
+        "titulocl titulocl"
+        "imagencl textocl"
+        "none none";
+    }
+
+    .img-cl img{
+        margin-top: 0;
+        margin-right: 5%;
+    }
+
+    .texto-cl p{
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 5%;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 15%;
+    }
+
+}
+
+/*==============CALIDAD============*/
+.grid-container-calidad{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/heroimg-lessop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 26%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    "header"
+    "tituloca"
+    "imagenca"
+    "textoca"
+    "none";
+}
+
+.titulo-ca{
+    grid-area: tituloca;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-ca h2{
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    color: #61C8B9;
+}
+
+.img-ca{
+    grid-area: imagenca;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.img-ca img{
+    width: 156px;
+    height: 183px;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #61C8B9;
+    
+}
+
+.texto-ca{
+    grid-area: textoca;
+    display: flex;
+    justify-content: center;
+
+}
+
+.texto-ca p{
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    padding: 5% 5% 5% 5%;
+    color: #122522;
+    	
+}
+
+/*=============media queries Calidad=========*/
+@media (min-width: 768px){
+
+    .grid-container-ca{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "header header"
+        "tituloca tituloca"
+        "imagenca imagenca"
+        "textoca textoca";
+    }
+
+    .img-ca img{
+        width: 212px;
+        height: 248.69px;
+        padding: 1%;
+    }
+
+    .titulo-ca{
+       margin: auto;
+    }
+
+    .titulo-ca h2{
+        font-size: 4rem;
+    }
+
+
+}
+
+@media (min-width: 1024px){
+    
+    .grid-container-calidad{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 15%;
+        grid-template-areas:
+        "header header"
+        "tituloca tituloca"
+        "imagenca textoca"
+        "none none";
+    }
+
+    .img-ca img{
+        margin-top: 0;
+        margin-right: 5%;
+    }
+
+    .texto-ca p{
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 5%;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 15%;
+    }
+
+}
+
+/*===============CONTACTANOS===============*/
+
+.grid-container-contacto{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/heroimg-lessop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 26%;
+}
+
+.titulo-co{
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo-co h2{
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        color: #61C8B9;
+    }
+
+form{
+        margin-left: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+label{
+    margin-bottom: 1%;
+    font-weight: 500;
+    color: #122522;
+    font-size: 1.4rem;
+    margin-top: 5%;
+}
+
+input{
+    width: 80vw;
+    height: 3.6rem;
+    font-weight: 400;
+    color: black;
+    font-size: 1.4rem;
+    border: 1px solid #61C8B9;
+    border-radius: 10px;
+    padding-inline: 2%;
+}
+
+input:focus{
+    border: 2px solid #61C8B9;
+    background-color: whitesmoke;
+}
+
+textarea{
+    width: 80vw;
+    height: 5%;
+    border: 1px solid #61C8B9;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    padding-inline: 2%;
+}
+
+.buttonCancelar{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: none;
+    border: none;
+}
+
+.buttonEnviar{
+    margin-top: 5%;
+    background-color: #61C8B9;
+    filter: drop-shadow(0px 4px 5px rgba(44, 86, 80, 0.44));
+}
+
+.buttonEnviar:hover{
+    background-color: #84cfc4;
+}
+
+
+/*========mediaqueries CONTACTANOS======*/
+
+@media (min-width: 768px){
+
+    .titulo-co h2{
+        font-size: 4rem;
+    }
+
+label{
+    font-size: 1.6rem;
+    margin-top: 2%;
+}
+
+input{
+    font-size: 1.6rem;
+}
+
+
+textarea{
+    font-size: 1.6rem;
+}
+
+
+
+}
+
+@media (min-width: 1024px){
+    form{
+        margin-left: 20%;
+    }
+
+    input{
+        width: 70%;
+        height: 5rem;
+    }
+
+    textarea{
+        width: 70%;
+    }
+
+    .botones{
+        width: 70%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .buttonCancelar{
+        width: 20%;
+    }
+
+}
