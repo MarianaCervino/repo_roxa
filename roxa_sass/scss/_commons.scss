@@ -1,0 +1,49 @@
+body{
+    background-image: url(../img/backgroundIndex.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    main{
+        height: 90vh;
+    }
+}
+
+.bodyPages{
+    background-image: url(../img/backgroundPages.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+p{
+    font-family: $mainFont;
+}
+
+h1{
+    font-size: $textTitleS;
+    font-weight: 500;
+    @media (min-width: 768px){
+        font-size: $textTitleM;
+    }
+}
+
+p{
+    font-size: $textBodyS;
+    font-weight: 300;
+    @media (min-width: 768px){
+        font-size: $textBodyM;
+    }
+}
+
+.divider{
+    color: $mainColor;
+    border-width: 5px;
+    border-radius: 50%;
+    opacity: 100%;
+}
+

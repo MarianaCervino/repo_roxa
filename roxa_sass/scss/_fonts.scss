@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+//vars fonts
+
+$mainFont: 'DM Sans', sans-serif;
+
+//sizes
+$textTitleS: 1.3rem;
+$textTitleM: 2rem;
+$textBodyS: 1.1rem;
+$textBodyM: 1.3rem;
+
+//textos Index
+.tituloRoxa{
+    color: $lightColor;
+}
+
+.textoIndex{
+    color: $lightColor;
+}
+
+
+//textos Pages
+.tituloPage{
+    color: $mainColor;
+}
+
+.textoPage{
+    color: $darkColor;
+}
+
+//botones
+.btn{
+    background-color: $mainColor;
+    color: $lightColor;
+    font-size: 1rem;
+    &:hover{
+        border-color: $mainColor;
+        color: $lightColor;
+    }
+}
+
