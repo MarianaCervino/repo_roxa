@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favIcon.svg">
     <title>Roxa Indumentaria Corporativa</title>
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +17,7 @@
     <link rel="stylesheet" href="css/animate.css">
 </head>
 
-<body>
+<body class="bodyPages">
     <!--NAV-->
     <nav class="navbar navbar-dark navbar-expand-lg navColor rounded-bottom col-10 justify-content-center m-auto">
         <div class="container-sm">
@@ -28,7 +27,7 @@
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link fs-4 p-4 m-1 active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link fs-4 p-4 m-1" aria-current="page" href="index.HTML">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fs-4 p-4 m-1" href="index.html">Quienes somos</a>
@@ -37,7 +36,7 @@
                 <a class="nav-link fs-4 p-4 m-1" href="index.html">Clientes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-4 p-4 m-1" href="index.html">Calidad</a>
+                <a class="nav-link fs-4 p-4 m-1 active" href="index.html">Calidad</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fs-4 p-4 m-1" href="index.html">Contactanos</a>
@@ -47,22 +46,45 @@
         </div>
       </nav>
 
-    <!--Main-->
-
-    <main>
-      <div class="container px-4 px-lg-5 h-100 wow fadeInRight">
-          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-              <div class="col-lg-8 align-self-end">
-                  <h1 class=" tituloRoxa mt-5">¡Te damos la bienvenida a Roxa!</h1>
-                  <hr class="divider" />
-              </div>
-              <div class="col-lg-8 align-self-baseline">
-                  <p class="textoIndex">Con más de 15 años de experiencia en el rubro de la confección, creamos la prenda ideal para tu personal.</p>
-                  <a class="btn btn-xl mt-5 fs-4" href="quienes-somos.html">Conocenos</a>
-              </div>
+    <!--carousel-->
+    <div id="carouselExampleIndicators" class=" wow fadeInRight carousel slide w-50 m-auto mt-5" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/carousel calidad/image 3.png" class="d-block w-100" alt="...">
           </div>
+          <div class="carousel-item">
+            <img src="img/carousel calidad/Frame 13.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/carousel calidad/Frame 14.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </main>
+
+    <div class="wow fadeInRight d-flex justify-content-center m-auto mt-4 tituloPage">
+         <h1>Calidad</h1>
+    </div>
+
+    <div class="wow fadeInRight col-10 d-flex justify-content-center m-auto p-4">
+        <p class="textoPage">Para garantizar la calidad y durabilidad de nuestros productos, utilizamos insumos de primera calidad. Los testeamos probando el resultado luego de uno y varios procesos de lavado. </p>
+    </div>
+    
+
+    
+
 
 
 
