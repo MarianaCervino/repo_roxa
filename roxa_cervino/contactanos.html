@@ -1,15 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--meta-->
-    <meta name="description" content="">
-    <meta name="author" content="MarianaCerviño">
-    <meta name="keywords" content="">
-    <!--pestaña-->
-    <link rel="shortcut icon" href="img/favIcon.svg">
     <title>Roxa Indumentaria Corporativa</title>
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +17,7 @@
     <link rel="stylesheet" href="css/animate.css">
 </head>
 
-<body>
+<body class="bodyPages">
     <!--NAV-->
     <nav class="navbar navbar-dark navbar-expand-lg navColor rounded-bottom col-10 justify-content-center m-auto">
         <div class="container-sm">
@@ -33,7 +27,7 @@
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link fs-4 p-4 m-1 active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link fs-4 p-4 m-1" aria-current="page" href="index.HTML">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fs-4 p-4 m-1" href="quienes-somos.html">Quienes somos</a>
@@ -45,29 +39,49 @@
                 <a class="nav-link fs-4 p-4 m-1" href="calidad.html">Calidad</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-4 p-4 m-1" href="contactanos.html">Contactanos</a>
+                <a class="nav-link fs-4 p-4 m-1 active" href="contactanos.html">Contactanos</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-    <!--Main-->
+      <section class="titulo-co wow fadeInRight">
+        <h2 class="fs-1">Contactanos</h2>
+</section>
 
-    <main>
-      <div class="container px-4 px-lg-5 h-100 wow fadeInRight">
-          <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-              <div class="col-lg-8 align-self-end">
-                  <h1 class=" tituloRoxa mt-5">¡Te damos la bienvenida a Roxa!</h1>
-                  <hr class="divider" />
-              </div>
-              <div class="col-lg-8 align-self-baseline">
-                  <p class="textoIndex">Con más de 15 años de experiencia en el rubro de la confección, creamos la prenda ideal para tu personal.</p>
-                  <a class="btn btn-xl mt-5 fs-4" href="quienes-somos.html">Conocenos</a>
-              </div>
-          </div>
-      </div>
-    </main>
+<section>
+    <form action="" class="wow fadeInRight">
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="ej. Maria Perez">
+        <br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="alguien@algo.com">
+        <br>
+
+        <label for="Rubro">Rubro</label>
+        <input type="text" id="rubro" placeholder="ej. Sanatorial">
+        <br>
+
+        <label for="¿Como nos conociste?">¿Cómo nos conociste?</label>
+        <input type="text" id="como nos conociste" placeholder="ej. Redes sociales">
+        <br>
+
+        <label for="consulta">Consulta</label>
+        <textarea name="consulta" id="consulta" cols="10" rows="10"></textarea>
+
+        <div class="botones">
+        <input class="buttonEnviar" type="submit" value="Enviar">
+
+        <input class="buttonCancelar" type="reset" value="Cancelar">
+        </div>
+    
+    </form>
+</section>
+
+
+    
+
 
 
 
